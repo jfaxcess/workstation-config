@@ -1,0 +1,12 @@
+#!/usr/bin/sh bash
+
+_rmBranch_completions()
+{
+  if [ "${#COMP_WORDS[@]}" != "2" ]; then
+    return
+  fi
+
+  COMPREPLY=($(compgen -W "$(git branch -li --format %\(refname:short\) --no-contains HEAD --merged)" -- "${COMP_WORDS[1]}"))
+}
+
+complete -F _rmBranch_completions rmBranch

@@ -1,0 +1,12 @@
+#!/usr/bin/sh bash
+
+_wcs_completions()
+{
+  if [ "${#COMP_WORDS[@]}" != "2" ]; then
+    return
+  fi
+
+  COMPREPLY=($(compgen -W "$(git tag -l)" -- "${COMP_WORDS[1]}"))
+}
+
+complete -F _wcs_completions whatChangedSince

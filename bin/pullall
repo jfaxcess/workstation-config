@@ -1,0 +1,12 @@
+#!/bin/sh
+
+for dir in $(ls); do
+  if [[ -d ${dir} ]]; then
+    echo
+    cd ${dir}
+    echo $(pwd)  
+    git status | head -1
+    git pull -p
+    cd - > /dev/null
+  fi
+done

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+git log --pretty='format:' --name-only $1..HEAD | sort -u
