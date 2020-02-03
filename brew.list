@@ -11,6 +11,7 @@ gdbm
 gettext
 git
 git-flow
+git-gui
 gmp
 gnupg
 gnutls
@@ -21,6 +22,7 @@ highlight
 hub
 icu4c
 jemalloc
+jpeg
 jq
 libassuan
 libevent
@@ -29,8 +31,10 @@ libgcrypt
 libgpg-error
 libidn2
 libksba
+libpng
 libtasn1
 libtermkey
+libtiff
 libtool
 libunistring
 libusb
@@ -67,6 +71,7 @@ readline
 ruby
 sphinx-doc
 sqlite
+tcl-tk
 terraform
 tmux
 unar
@@ -74,6 +79,7 @@ unbound
 unibilium
 vim
 watchman
+wxmac
 xmlstarlet
 xz
 yarn
